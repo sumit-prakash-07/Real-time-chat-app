@@ -9,7 +9,7 @@ export const useSocket = ()=>{
 
 export const SocketProvider = (props) =>{
     const socket = useMemo(()=>
-        io('localhost:5001'),[]
+        io('https://real-time-chat-app-r7w6.onrender.com'),[]
     );
     return (
         <SocketContext.Provider value={socket}>

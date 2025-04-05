@@ -7,7 +7,8 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:5173"],
+    origin: ["http://localhost:5173", "https://your-https://real-time-chat-app-r7w6.onrender.com-url.com"], // <-- Add your deployed frontend URL here
+    methods: ["GET", "POST"]
   },
 });
 
